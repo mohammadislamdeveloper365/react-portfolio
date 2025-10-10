@@ -12,6 +12,7 @@ class TodoForm extends Component {
 
         this.handleTodoChange = this.handleTodoChange.bind(this);
         this.handleTodoSubmit= this.handleTodoSubmit.bind(this);
+        this.inputRef = React.createRef();
     }
 
     handleTodoChange(e) {
@@ -32,12 +33,16 @@ class TodoForm extends Component {
         })
     }
 
+    componentDidMount(){
+        this.inputRef.current.focus();
+    }
+    
     render() {
         const { todo } = this.state;
         
         return (
             <form onSubmit={this.handleTodoSubmit} className={styles['todo-form']}>
-                <input type="text" name="todo" value={todo} onChange={this.handleTodoChange} className={styles['todo-input']}/>
+                <input type="text" name="todo" value={todo} onChange={this.handleTodoChange} className={styles['todo-input']} ref={this.inputRef}/>
                 <button className={styles['todo-button']}>Add Task</button>
             </form>
         );
