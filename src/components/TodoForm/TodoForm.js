@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import styles from './TodoForm.module.css';
 
 class TodoForm extends Component {
     constructor(props){
@@ -35,9 +36,9 @@ class TodoForm extends Component {
         const { todo } = this.state;
         
         return (
-            <form onSubmit={this.handleTodoSubmit}>
-                <input type="text" name="todo" value={todo} onChange={this.handleTodoChange} className="todo-input"/>
-                <button>Add Task</button>
+            <form onSubmit={this.handleTodoSubmit} className={styles['todo-form']}>
+                <input type="text" name="todo" value={todo} onChange={this.handleTodoChange} className={styles['todo-input']}/>
+                <button className={styles['todo-button']}>Add Task</button>
             </form>
         );
     }

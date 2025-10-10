@@ -1,0 +1,28 @@
+.todo-list {
+    list-style-type: none;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    color: rgb(2, 2, 95);
+    position: relative;
+}
+.todo-list-detail {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.todo-list-task {
+    width: 60%;
+}
+
+.todo-list-close {
+    color: red;
+    font-size: 2rem;
+    padding-top: 7px;
+}
+
+.todo-list-edit {
+    color: green;
+    font-size: 2.5rem;
+
+}
