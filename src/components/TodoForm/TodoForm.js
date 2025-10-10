@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 class TodoForm extends Component {
     constructor(props){
         super(props);
         this.state = {
-            todo:''
+            todo:'',
+            id: ''
         };
 
         this.handleTodoChange = this.handleTodoChange.bind(this);
@@ -13,20 +15,25 @@ class TodoForm extends Component {
 
     handleTodoChange(e) {
         this.setState({
-            todo: e.target.value
+            todo: e.target.value,
+            id: uuidv4()
         })
     }
 
     handleTodoSubmit(e) {
         e.preventDefault();
-
+        const { addTodo } = this.props;
+        const { todo, id } = this.state;
+        addTodo({todo,id});
         this.setState({
-            todo: ''
+            todo: '',
+            id: ''
         })
     }
 
     render() {
         const { todo } = this.state;
+        
         return (
             <form onSubmit={this.handleTodoSubmit}>
                 <input type="text" name="todo" value={todo} onChange={this.handleTodoChange} className="todo-input"/>
