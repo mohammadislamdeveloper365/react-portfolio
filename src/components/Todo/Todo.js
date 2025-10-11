@@ -16,7 +16,7 @@ class Todo extends Component {
         const { todoList } = this.state;
         this.setState({
             todoList: [...todoList, todo]
-        }, console.log(this.state.todoList))
+        })
     }
 
     render() {

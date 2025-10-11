@@ -8,7 +8,7 @@ class TodoList extends Component {
 
     return (
       <ul className={styles["todo-list"]}>
-        {todoList.map((todo) => <TodoListItem todo={todo}/>)}
+        {todoList.map((todo) => <TodoListItem todo={todo} key={todo.id}/>)}
       </ul>
     );
   }

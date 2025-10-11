@@ -6,8 +6,7 @@ class TodoForm extends Component {
     constructor(props){
         super(props);
         this.state = {
-            todo:'',
-            id: ''
+            todo:''
         };
 
         this.handleTodoChange = this.handleTodoChange.bind(this);
@@ -17,26 +16,28 @@ class TodoForm extends Component {
 
     handleTodoChange(e) {
         this.setState({
-            todo: e.target.value,
-            id: uuidv4()
+            todo: e.target.value
         })
     }
 
     handleTodoSubmit(e) {
         e.preventDefault();
         const { addTodo } = this.props;
-        const { todo, id } = this.state;
-        addTodo({todo,id});
-        this.setState({
-            todo: '',
-            id: ''
-        })
+        const { todo } = this.state;
+        if (todo !== "") {
+          addTodo({ todo, id: uuidv4() });
+          this.setState({
+            todo: "",
+            id: "",
+          });
+        }
+        this.inputRef.current.focus();
     }
 
     componentDidMount(){
         this.inputRef.current.focus();
     }
-    
+
     render() {
         const { todo } = this.state;
         
