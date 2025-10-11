@@ -1,18 +1,20 @@
 .todo-form {
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .todo-input {
-    width: 70%;
-    padding: 5px;
+    width: 75%;
+    padding: 0.5rem;
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 0.4rem;
+    font-size: 1.25rem;
     color: rgb(223, 41, 5);
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .todo-button {
+    width: 25%;
     margin-left: 10px;
     border-radius: 5px;
     padding: 5px;

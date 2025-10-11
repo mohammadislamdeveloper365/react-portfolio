@@ -1,0 +1,26 @@
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.todo-list-icons {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.todo-list-task {
+    width: 75%;
+}
+
+
+.todo-list-close-icon {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.todo-list-edit-icon {
+    color: green;
+    font-size: 2rem;
+}
