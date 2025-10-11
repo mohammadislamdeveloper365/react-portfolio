@@ -19,9 +19,9 @@ class Todo extends Component {
         })
     }
 
-    deleteTodo = todo =>  {
+    deleteTodo = id =>  {
         const { todoList } = this.state;
-        const filteredTodos = todoList.filter(todoItem => todoItem.id !== todo.id);
+        const filteredTodos = todoList.filter(todoItem => todoItem.id !== id);
         this.setState({
             todoList: filteredTodos
         });

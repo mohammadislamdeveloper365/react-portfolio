@@ -1,23 +1,41 @@
+@import '../CssLibrary/basic.css';
+
 .todo-list-item {
     display: flex;
+    font-size: 1.5rem;
     justify-content: space-between;
     margin-bottom: 10px;
+}
+
+.todo-list-task-update {
+    background-color: rgb(202, 214, 177);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    width: 75%;
+}
+
+.todo-list-task {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 75%;
 }
 
 .todo-list-icons {
     display: flex;
     align-items: center;
+    padding-top: 5px;
     width: 25%;
 }
 
-.todo-list-task {
-    width: 75%;
-}
-
-
 .todo-list-close-icon {
+    color: rgb(112, 7, 7);
     font-size: 2rem;
     font-weight: bolder;
+    margin-right: 5px;
 }
 
 .todo-list-edit-icon {

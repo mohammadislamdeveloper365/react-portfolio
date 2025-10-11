@@ -1,14 +1,15 @@
+@import '../CssLibrary/basic.css';
 
 .todo {
     background-color: rgb(214, 177, 128);
-    max-width: 580px;
+    max-width: 700px;
     margin: auto;
     padding: 30px;
     border-radius: 1rem;
 }
 
 .todo-heading {
-    color: purple;
+    color: var(--primary-color);
     margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 200;
