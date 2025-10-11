@@ -1,5 +1,4 @@
 import React from 'react';
-import { IoIosCloseCircleOutline } from "react-icons/io";
 import { MdDelete } from "react-icons/md";
 import { TiEdit } from "react-icons/ti";
 import styles from './TodoListItem.module.css';
@@ -12,7 +11,7 @@ export default function TodoListItem(props) {
       <li key={todo.id} className={styles["todo-list-item"]}>
             <span className={styles["todo-list-task"]}>{todo.todo}</span>
             <div className={styles["todo-list-icons"]}>
-                <span onClick={deleteItem}>
+                <span onClick={() => deleteItem(todo)}>
                     <MdDelete  className={styles["todo-list-close-icon"]}/>
                 </span>
                 <span>

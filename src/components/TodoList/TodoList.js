@@ -4,11 +4,11 @@ import styles from "./TodoList.module.css";
 
 class TodoList extends Component {
   render() {
-    const { todoList } = this.props;
+    const { todoList, deleteTodo } = this.props;
 
     return (
       <ul className={styles["todo-list"]}>
-        {todoList.map((todo) => <TodoListItem todo={todo} key={todo.id}/>)}
+        {todoList.map((todo) => <TodoListItem todo={todo} key={todo.id} deleteItem={deleteTodo}/>)}
       </ul>
     );
   }
