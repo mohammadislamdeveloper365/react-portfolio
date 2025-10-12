@@ -5,15 +5,24 @@ import styles from './TodoListItem.module.css';
 
 export default function TodoListItem(props) {
     const [editTodo, setEditTodo] = useState(false);
-    const { todo, deleteItem } = props;
+    const { todo, deleteItem, updateItem } = props;
+    const [updateTodo, setUpdateTodo] = useState(todo.todo);
+    
 
     const handleUpdate=()=> {
         setEditTodo(!editTodo);
+        if(updateTodo !== '') {
+          updateItem(todo.id, updateTodo);
+        }
     };
+
+    const handleChange = e => {
+        setUpdateTodo(e.target.value);
+    }
 
     const renderTask = () => {
       let content = null;
-      content = !editTodo ? <span className={styles["todo-list-task"]}>{todo.todo}</span> : <input type="text" className={styles["todo-list-task-update"]} value={todo.todo}/>;
+      content = !editTodo ? <span className={styles["todo-list-task"]}>{todo.todo}</span> : <input type="text" className={styles["todo-list-task-update"]} value={updateTodo} onChange={handleChange} />;
 
       return content;
     }

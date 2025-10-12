@@ -27,13 +27,23 @@ class Todo extends Component {
         });
     }
 
+    updateTodo = (id, updateTodo) => {
+        const { todoList } = this.state;
+        const updateTodoList = todoList.map(todo => 
+                todo.id === id ? { ...todo, todo: updateTodo } : todo
+            );
+        this.setState({
+            todoList: updateTodoList
+        });
+    }
+
     render() {
         const { todoList } = this.state
         return (
             <div className={styles.todo}>
                 <h1 className={styles["todo-heading"]}>What are you planning to do today?</h1>
                 <TodoForm addTodo={this.addTodo} />
-                <TodoList todoList={todoList} deleteTodo={this.deleteTodo}/>
+                <TodoList todoList={todoList} deleteTodo={this.deleteTodo} updateTodo={this.updateTodo}/>
             </div>
         );
     }
