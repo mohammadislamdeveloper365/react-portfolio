@@ -1,4 +1,4 @@
-@import '../CssLibrary/basic.css';
+@import '../../components/CssLibrary/basic.css';
 
 .todo {
     background-color: rgb(214, 177, 128);

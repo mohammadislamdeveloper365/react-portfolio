@@ -1,5 +1,5 @@
-import TodoList from '../TodoList/TodoList';
-import TodoForm from '../TodoForm/TodoForm';
+import TodoList from '../../components/TodoList/TodoList';
+import TodoForm from '../../components/TodoForm/TodoForm';
 import styles from './Todo.module.css';
 import React, { Component } from 'react';
 
