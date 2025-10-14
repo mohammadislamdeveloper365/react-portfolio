@@ -1,0 +1,12 @@
+.searchInput {
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+.searchButton {
+    color: var(--light-color);
+    background-color: var(--light-blue-color)
+}

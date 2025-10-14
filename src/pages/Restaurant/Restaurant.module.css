@@ -1,0 +1,14 @@
+@import '../../components/CssLibrary/basic.css';
+
+.restaurantPageContainer {
+    background-color: var(--primary-bg-color);
+}
+
+.searchInput {
+    border: none;
+    border-radius: 1rem;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 25%;
+}

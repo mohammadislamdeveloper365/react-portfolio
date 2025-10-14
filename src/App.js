@@ -1,10 +1,11 @@
 import './App.css';
-import Todo from "./pages/Todo/Todo";
+import Restaurant from './pages/Restaurant/Restaurant';
+// import Todo from "./pages/Todo/Todo";
 
 function App() {
   return (
     <div className="App">
-       <Todo />
+       <Restaurant/>
     </div>
   );
 }
