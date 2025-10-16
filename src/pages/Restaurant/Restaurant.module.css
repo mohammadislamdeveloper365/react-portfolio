@@ -1,7 +1,7 @@
 @import '../../components/CssLibrary/basic.css';
 
 .restaurantPageContainer {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--orange-red-bg);
     margin-top: 1rem;
     padding: 0.50rem;
     display: flex;
@@ -14,20 +14,36 @@
     border-radius: 1rem;
     display: block;
     text-align: center;
-    margin: 0 auto;
-    width: 25%;
 }
-
 .card {
-    align-content: center;
-    width: 30%;
-    margin: 5px;
-    padding: 0 15px;
-    background-color: aliceblue;
-    border-color: antiquewhite;
-    border-radius:1rem;
+        width: 30%;
+        margin: 1rem;
+        padding: 0 15px;
+        background-color: aliceblue;
+        border-color: antiquewhite;
+        border-radius:1rem;
 }
 
+@media only screen and (max-width: 850px) {
+    .card {
+        width: 40%;
+        background-color: aliceblue;
+        border-color: antiquewhite;
+        border-radius:1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        align-content: center;
+        width: 80%;
+        margin: 5px;
+        padding: 0 15px;
+        background-color: aliceblue;
+        border-color: antiquewhite;
+        border-radius:1rem;
+    }
+}
 .cardContainer {
     display: flex;
 }
@@ -42,4 +58,11 @@
 
 .menuDescription {
     font-size: 1.25rem;
+}
+
+.errorMsg {
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    padding: 1rem 0.75rem;
 }

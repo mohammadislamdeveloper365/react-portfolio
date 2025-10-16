@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 
 export default function SearchInput(props) {
   const [searchItem, setSearchItem] = useState("");
-  const { className, placeholder, name } = props;
+  const { className, placeholder, name, handleSearchClick } = props;
 
   function getInputProps(){
     return {
@@ -22,7 +22,7 @@ export default function SearchInput(props) {
     return {
       className: classNames(styles.searchButton),
       type: "button",
-      handleClick: handleClick
+      handleClick: handleSearchItem
     }
   }
 
@@ -32,10 +32,8 @@ export default function SearchInput(props) {
     }
   }
   
-   function handleClick(){
-        if(searchItem !== '') {
-          console.log(searchItem)
-        }
+   function handleSearchItem(){
+        handleSearchClick(searchItem);
     }
 
   function handleInputChange(e) {

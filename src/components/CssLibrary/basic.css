@@ -1,6 +1,10 @@
 :root {
     --primary-color: purple;
-    --primary-bg-color: #5D1049;
+    --primary-bg-color: #173F5F;
+    --light-bg-color: #20639B;
+    --light-green-bg: #3CAEA3;
+    --light-yellow-bg: #F6D55C;
+    --orange-red-bg: #ED553B;
     --light-blue-color: #0984e3;
     --light-color: #ffffff;
     --secondary-bg-color: #abd4e9;
