@@ -1,0 +1,5 @@
+@import url('../CssLibrary/basic.css');
+
+.searchIcon {
+    font-size: var(--xxl-font);
+}

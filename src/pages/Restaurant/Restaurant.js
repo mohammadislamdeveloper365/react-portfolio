@@ -72,7 +72,7 @@ export default function Restaurant() {
 
   function renderMenuCard(menu) {
     let content = null;
-    console.log(menu)
+    
     if (!isSelected) {
       content = (
         <Card key={menu.idCategory} {...getCardProps(menu)}>
@@ -86,7 +86,7 @@ export default function Restaurant() {
         </Card>
       );
     } else {
-      console.log()
+     
       content = (
         <Card key={menu.idMeal} {...getCardProps(menu)}>
           <div>

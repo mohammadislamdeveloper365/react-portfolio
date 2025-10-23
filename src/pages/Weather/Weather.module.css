@@ -1,0 +1,23 @@
+@import '../../components/CssLibrary/basic.css';
+
+.weatherContainer {
+    max-width: 550px;
+    margin: auto;
+    text-align: center;
+    padding: var(--xl-size);
+    background-color: var(--light-dark-color);
+    color: var(--light-color);
+    border-radius: var(--small-size);
+}
+
+.searchBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 350px;
+    margin: var(--xl-size) auto 0;
+}
+.searchInput {
+    border-radius: var(--small-size);
+    border: none;
+}

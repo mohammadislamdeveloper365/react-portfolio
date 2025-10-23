@@ -1,0 +1,5 @@
+@import '../CssLibrary/basic.css';
+
+.weatherDetails {
+    margin-top: var(--xl-size);
+}

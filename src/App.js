@@ -1,11 +1,12 @@
 import './App.css';
-import Restaurant from './pages/Restaurant/Restaurant';
+// import Restaurant from './pages/Restaurant/Restaurant';
 // import Todo from "./pages/Todo/Todo";
+import Weather from './pages/Weather/Weather';
 
 function App() {
   return (
     <div className="App">
-       <Restaurant/>
+       <Weather />
     </div>
   );
 }

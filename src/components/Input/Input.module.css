@@ -1,0 +1,6 @@
+@import url('../CssLibrary/basic.css');
+
+.input {
+    padding: var(--small-size) var(--xs-size);
+    font-size: var(--xl-font);
+}

@@ -9,4 +9,15 @@
     --light-color: #ffffff;
     --secondary-bg-color: #abd4e9;
     --light-dark-color: rgb(50, 49, 49);
+    --small-font: 0.5rem;
+    --xs-font: 0.37rem;
+    --medium-font: 0.625rem;
+    --large-font: 1rem;
+    --xl-font: 1.25rem;
+    --xxl-font: 1.75rem;
+    --xs-size: 0.25rem;
+    --small-size: 0.37rem;
+    --medium-size: 0.5rem;
+    --large-size: 0.75rem;
+    --xl-size: 1rem;
 }
